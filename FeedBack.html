@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>FeedBack</title>
+</head>
+<style>
+body{
+ background-image:url("background-.png");
+  margin-right:320px;
+    margin-left:40px;
+    color:black;
+}
+
+.h2{
+   margin-right:800px;  
+}
+
+.btn{
+
+margin-left:300px;
+
+}
+.form-group{
+      margin-left:450px;
+   margin-right: 300px;
+    }
+.container-fluid{
+
+   margin-left: 550px;
+    margin-bottom:50px;
+    margin-top:35px;
+}
+
+.h1{
+   margin-top:200px;
+}
+
+.page-header{
+
+     margin-top:-25px;  
+       margin-left:20px;  
+       margin-right:-80px; 
+}
+
+</style>
+
+<body>
+<div class="container-fluid">
+<h1>FeedBack</h1>
+  </div>
+   <div class="container">
+  <div class="page-header">
+  </div>
+    <h2 style="margin-left:450px;">Please fill the form for queries.</h2> 
+   <div class="form-group">
+<label for="exampleInputEmail1"><span class="error_msg">*</span> Name :</label>
+<input type="text" class="form-control txtbox" name="yourname" id="yourname" value="" placeholder="Enter Name" autofocus="">
+</div>
+
+<div class="form-group">
+<label for="exampleInputPassword1"><span class="error_msg">*</span> Area of enquiry :</label>
+<select class="form-control txtbox" name="area_enquiry" id="area_enquiry">
+<option value="">Select From Available Options</option>
+<option value="How to update your resume">How to update your resume</option>
+<option value="Forgot username and password">Forgot username and password</option>
+<option value="How To Create and Edit Job messenger">How To Create and Edit Job messenger</option>
+<option value="How to change password">How to change password</option>
+<option value="How to register as a fresher">How to register as a fresher</option>
+<option value="Unable to Login">Unable to Login</option>
+<option value="How to create new profile">How to create new profile</option>
+<option value="Not getting job alerts">Not getting job alerts</option>
+<option value="Mobile/email verification">Mobile/email verification</option>
+<option value="Others">Others</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="exampleInputEmail1"> <span class="error_msg">*</span> E-Mail ID :</label>
+<input type="text" class="form-control txtbox" name="mailid" id="mailid" placeholder="Enter Email" value="" onkeyup="checkspaces();">
+</div>
+
+<div class="form-group">
+<label for="exampleInputEmail1"><span class="error_msg">*</span>Mobile Number :</label>
+<input type="text" class="form-control txtbox" name="telnum" id="telnum" placeholder="Enter Mobile Number" value="" onkeyup="checkspaces();">
+</div>
+
+<div class="form-group">
+<label for="exampleInputEmail1"><span class="error_msg">*</span> Subject : </label>
+<input type="text" class="form-control txtbox" name="subject" id="subject" placeholder="Enter Subject" value="" onkeyup="checkspaces();">
+</div>
+
+<div class="form-group">
+<label for="exampleInputPassword1"> Comments :</label>
+<textarea class="form-control txtbox" id="comments" name="comments" placeholder="Comments" rows="4" onkeyup="checkspaces();"></textarea> In about 500 words explain what details you require from us.
+</div>
+
+<div class="col-sm-offset-3 col-sm-10">
+<input type="submit" name="contactsubmit" class="btn btn-success" value="SUBMIT">
+
+
+
+
+
+
+</body>

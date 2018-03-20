@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+  <div class="login-page">
+  <div class="form">
+    
+<form class="register-form" method="POST" action="login.html" onsubmit="return checkForm(this);">
+Username: <input type="text" name="username" placeholder="User name" required>
+Password: <input type="password" name="pwd1" placeholder="Password" required>
+Confirm Password: <input type="password" name="pwd2" placeholder="Password confirmation" required>
+Email Id:<input type="email" name="email" required placeholder="Enter a valid email address" required />
+<button>Create</button> 
+<p class="message">Passwords must contain at least six characters, including uppercase, lowercase letters and numbers!</p> 
+<p class="message">Already Registerered? <a href="#">Login</a></p>
+</form>
+
+<form class="login-form" method="POST" action="profile.html" onsubmit="return checkForm(this);">
+      <input type="text" placeholder="user name" required />
+      <input type="password" placeholder="password" name="pwd1" required />
+      <button>login</button>
+      <p class="message">Not Registered? <a href="#">Register</a></p> 
+</form>
+  </div>  
+  </div>
+
+  <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+
+  <script>
+    $(' .message a').click(function(){
+    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
+  </script>
+  <script type="text/javascript">
+
+  function checkPassword(str)
+  {
+    var re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+    return re.test(str);
+  }
+
+  function checkForm(form)
+  {
+    if(form.username.value == "") {
+      alert("Error: Username cannot be blank!");
+      form.username.focus();
+      return false;
+    }
+    re = /^\w+$/;
+    if(!re.test(form.username.value)) {
+      alert("Error: Username must contain only letters, numbers and underscores!");
+      form.username.focus();
+      return false;
+    }
+    if(form.pwd1.value != "" && form.pwd1.value == form.pwd2.value) {
+      if(!checkPassword(form.pwd1.value)) {
+        alert("The password you have entered is not valid!");
+        form.pwd1.focus();
+        return false;
+      }
+    } else {
+      alert("Error: Please check that you've entered and confirmed your password!");
+      form.pwd1.focus();
+      return false;
+    }
+    return true;
+  }
+
+  </script>
+</body>
+</html>
+
+

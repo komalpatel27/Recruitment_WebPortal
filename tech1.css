@@ -1,0 +1,79 @@
+@import'https://fonts.googleapis.com/css?family=Oswald:400,700';
+@import'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+
+body{
+	margin: 0;
+	background-image: url(img/bg.png);
+	height: 100%;
+	width: 100%
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+
+}
+.container ul{
+	list-style-type: none;
+	margin-top: auto;
+	margin-top: 50px;
+	background-image: url(img/logo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+
+}
+
+.container ul li{
+	text-align: center;
+	color: white;
+	font-size:18px;
+	position: relative;
+	margin: 50px;
+	display: inline-block;
+}
+
+
+h1{
+	font-family: 'Oswald', sans-serif;
+	font-size: 38px;
+	text-align: center;
+	margin-top: 8px;
+	color: #b22304 ;
+
+
+}
+marquee{
+	font-size: 20px;
+	color: #f95835;
+}
+
+.border{
+	background-color: rgba( 176, 173, 172,0.2);
+	margin: ;
+	padding: 40px;
+	padding-right: 50px;
+	height: 270px;
+	margin-top: 40px;
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	color:  #f78959;
+
+}
+.box{
+	float: left;
+	margin-left: 10px;
+	
+}
+.box2{
+	float: right;
+	margin-right:10px;
+   }
+   .img{
+   	width: 60%;
+   	height: 100%;
+   } 
+   .img1{
+   	width: 30%;
+   	height: 90%;
+   }
